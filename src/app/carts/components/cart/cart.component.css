@@ -1,0 +1,105 @@
+/* .container {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0 20px;
+  margin: 50px 0;
+}
+
+ .quantity {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.input{
+  margin: 0 20px;
+
+}
+
+tbody {
+  border-top: 1px solid #c61d21;
+  border-bottom: 1px solid #c61d21;
+
+}
+
+tr, td{
+  border-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+input{
+  text-align: center;
+
+}
+
+.headcart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+ */
+
+
+ .form-outline {
+  position: relative;
+  top: 10px;
+  right: 8px;
+ }
+
+ .addremove{
+  position: relative !important;
+    bottom: -9px !important;
+ }
+
+ .form-label {
+  text-align: center;
+  position: relative;
+  left: 45px;
+ }
+  .itemInCart {
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #ddd;
+    position: absolute;
+    right: 10px;
+    border: 2px solid #e0675c;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+ .itemInCart:hover{
+   color: white;
+  background-color: #FF5747;
+}
+
+ .gradient-custom {
+  position: relative;
+  /* fallback for old browsers */
+  background: url('/assets/images/bg.svg') center / cover no-repeat fixed;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: url('/assets/images/bg.svg') center / cover no-repeat fixed;
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: url('/assets/images/bg.svg') center / cover no-repeat fixed;
+  }
+
+
+  @media (min-width: 768px) {
+   .checkoutCart{
+    flex: 0 0 auto;
+    width: 45.333333%;
+   }
+    .itemInCart{
+      font-size: 10px;
+    }
+  }

@@ -1,0 +1,28 @@
+
+  <app-hero></app-hero>
+
+<div class="box mt-6">
+  <div class="my-2 w-25">
+    <app-select
+      [data]="categories"
+      [title]="'Categories'"
+      (selectedValue)="onCategory($event)"
+    ></app-select>
+  </div>
+  <div class="row" *ngIf="!spinner">
+    <div class="col-lg-3 col-md-6 col-sm-6"
+     id="cart"
+      *ngFor="let product of products"
+        routerLinkActive="router-link-active"
+         >
+      <app-prod [data]="product" (item)="addToCart($event)"></app-prod>
+    </div>
+  </div>
+
+  <div class="text-center w-100" *ngIf="spinner">
+    <app-spinner></app-spinner>
+  </div>
+</div>
+
+
+<app-stats></app-stats>

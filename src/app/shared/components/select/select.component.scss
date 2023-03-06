@@ -1,0 +1,30 @@
+
+select::-ms-expand {
+  display: none;
+}
+.select {
+  position: relative;
+  display: flex;
+  height: 5em;
+  line-height: 5;
+  background: #5c6664;
+  overflow: hidden;
+  border-radius: .25em;
+}
+
+
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #2b2e2e;
+  cursor:pointer;
+  pointer-events:none;
+  transition:.25s all ease;
+}
+.select:hover::after {
+  color: #ea4f4c;
+}
+
