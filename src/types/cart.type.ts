@@ -5,6 +5,11 @@ export interface CartType {
   data: Data
 }
 
+export type CartContextType = {
+  numberOfCartItem: number;
+  setNumberOfCartItem: React.Dispatch<React.SetStateAction<number>>;
+};
+
 export interface Data {
   _id: string
   cartOwner: string
